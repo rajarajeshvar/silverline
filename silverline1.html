@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Silverline Web3 Profile</title>
   <style>
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f4f9;
+      background: linear-gradient(135deg, peachpuff, #110667);
+      background-size: 200% 200%;
+      transition: background-position 2s ease;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       padding: 1rem;
     }
+
+    body:hover {
+      background-position: right bottom;
+    }
+
     .profile-container {
       background: white;
       padding: 2rem;
@@ -27,6 +35,7 @@
       width: 100%;
       max-width: 500px;
     }
+
     .profile-photo {
       width: 100px;
       height: 100px;
@@ -34,18 +43,22 @@
       object-fit: cover;
       margin-bottom: 1rem;
     }
+
     .profile-text {
       font-size: 1rem;
       color: #333;
       transition: color 0.3s ease;
     }
+
     .profile-text:hover {
       color: #0077cc;
     }
+
     @media (min-width: 600px) {
       .profile-text {
         font-size: 1.1rem;
       }
+
       .profile-photo {
         width: 120px;
         height: 120px;
