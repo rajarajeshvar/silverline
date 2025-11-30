@@ -1,118 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Expanding Cards</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+# Leetcode
+A collection of LeetCode questions to ace the coding interview!  
+Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #111;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<p align="center">
+  <a href="https://leetcode.com/u/raja_0203/">
+    <img src="https://leetcard.jacoblin.cool/raja_0203?theme=dark" alt="LeetCode Stats">
+  </a>
+</p>
 
-    .container {
-      display: flex;
-      gap: 1rem;
-      width: 90vw;
-      max-width: 1200px;
-      height: 80vh;
-    }
+---
 
-    .panel {
-      flex: 1;
-      background-size: cover;
-      background-position: center;
-      border-radius: 15px;
-      position: relative;
-      cursor: pointer;
-      transition: flex 0.5s ease-in-out;
-      display: flex;
-      align-items: flex-end;
-      overflow: hidden;
-    }
+<!---LeetCode Topics Start-->
+# LeetCode Topics
 
-    .panel h3 {
-      background: rgba(0, 0, 0, 0.6);
-      width: 100%;
-      padding: 1rem;
-      text-align: center;
-      font-size: 1.2rem;
-    }
+## Linked List
+| Problems |
+| ------- |
+| [0002-add-two-numbers](https://github.com/rajarajeshvar/Leetcode/tree/master/0002-add-two-numbers) |
 
-    .panel.active {
-      flex: 5;
-    }
+## Math
+| Problems |
+| ------- |
+| [0002-add-two-numbers](https://github.com/rajarajeshvar/Leetcode/tree/master/0002-add-two-numbers) |
 
-    .panel:not(.active) {
-      flex: 0.5;
-    }
+## Recursion
+| Problems |
+| ------- |
+| [0002-add-two-numbers](https://github.com/rajarajeshvar/Leetcode/tree/master/0002-add-two-numbers) |
 
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-        height: auto;
-      }
+## Array
+| Problems |
+| ------- |
+| [0001-two-sum](https://github.com/rajarajeshvar/Leetcode/tree/master/0001-two-sum) |
 
-      .panel {
-        height: 200px;
-      }
-
-      .panel.active {
-        flex: 1;
-        height: 300px;
-      }
-
-      .panel:not(.active) {
-        flex: 1;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="panel active" style="background-image: url('jikan.png');">
-      <h3>Nature</h3>
-    </div>
-    <div class="panel" style="background-image: url('jikan.png');">
-      <h3>City Lights</h3>
-    </div>
-    <div class="panel" style="background-image: url('jikan.png');">
-      <h3>Tech World</h3>
-    </div>
-    <div class="panel" style="background-image: url('jikan.png');">
-      <h3>Outer Space</h3>
-    </div>
-    <div class="panel" style="background-image: url('https://source.unsplash.com/800x600/?ocean');">
-      <h3>Ocean Life</h3>
-    </div>
-  </div>
-
-  <script>
-    const panels = document.querySelectorAll('.panel');
-
-    panels.forEach(panel => {
-      panel.addEventListener('click', () => {
-        removeActiveClasses();
-        panel.classList.add('active');
-      });
-    });
-
-    function removeActiveClasses() {
-      panels.forEach(panel => {
-        panel.classList.remove('active');
-      });
-    }
-  </script>
-</body>
-</html>
+## Hash Table
+| Problems |
+| ------- |
+| [0001-two-sum](https://github.com/rajarajeshvar/Leetcode/tree/master/0001-two-sum) |
+<!---LeetCode Topics End-->
